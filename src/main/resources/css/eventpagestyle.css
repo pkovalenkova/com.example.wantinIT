@@ -1,0 +1,196 @@
+.main {
+  min-height: calc(100vh - 90px - 250px);
+  padding: 40px 0; }
+
+.change-event{
+display:flex;
+justify-content:flex-end;
+align-items:center;}
+.change-event a{
+text-decoration: none;
+font-weight: 700;
+font-size:24;
+color: black;
+transition: 0.5s all;}
+.change-event a::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 300ms; }
+.change-event a:hover::after {
+  width: 100%; }
+
+.event__header{
+  display:grid;
+  grid-template-columns: 2fr 4fr;
+  height:360px;
+  margin-bottom:40px;}
+  .event__header-left{
+   border-radius: 20px;
+   overflow: hidden;
+   margin-right:20px;}
+   .event__header-img{
+    width: 100%;
+    height:360px;
+    object-fit: cover;}
+   .event__header-text{
+     width: 100%;}
+    .event__header-text-title{
+     line-height:1;
+     height:70px;
+     font-size:32px;
+     font-weight: 700;}
+     .event__header-text-discription{
+      height:170px;
+      line-height:1;
+      font-weight: 400;
+      font-size:18px;
+      text-align:justify;}
+   .event__type_header {
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: flex-start; }
+   .event__type span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0C6AA5;
+    border: 1px solid #0C6AA5;
+    border-radius: 15px;
+    margin:0px 10px 0 0;
+    padding: 4px 7px; }
+   .event__header-text-time{
+    margin-top:10px;
+    margin-right:10px;
+    display: flex;
+    justify-content: flex-start;
+     align-items:center;}
+    .event__header-text-time-date{
+     margin-left: 5px;;
+     font-size:14px;
+     font-weight:700;}
+
+.activities-checkbox {
+      border: none;
+      width: 0;
+      height: 0; }
+      .activities-checkbox-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        gap: 100px;
+        margin-bottom:40px;}
+      .activities-checkbox-label {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:  white;
+        background-color:#0C6AA5;
+        padding: 8px 30px;
+        height: 45px;
+        min-width: 120px;
+        border: 1px solid #0C6AA5;
+        border-radius: 15px;
+        font-size: 24px;
+        font-weight: 700; }
+       .activities-checkbox-container{
+       display: flex;
+       flex-direction: row;
+       gap: 5px;
+       }
+       .activities-checkbox-icon{
+       transition: 0.5s all;
+       cursor: pointer;
+       }
+
+.report__area{
+display:flex;
+flex-direction: column;
+margin-bottom:40px;
+}
+.report__title{
+  font-size: 24px;
+  font-weight:700;
+  margin-bottom:10px;}
+  .report__text{
+  max-height:250px;
+        line-height:1;
+        font-weight: 400;
+        font-size:18px;
+        text-align:justify;}
+
+.files__area{
+display:flex;
+flex-direction: column;
+margin-bottom:40px;
+}
+.files__area-title{
+ font-size: 24px;
+ font-weight:700;
+ margin-bottom:10px;}
+ .files__area-file{
+ display:flex;
+ justify-content: flex-start;
+ align-items:center;
+ gap:10px;}
+ .files__area-file img{
+ height:25px;
+ }
+
+ .photos__area{
+ position:relative;
+ overflow:hidden;
+ display:flex;
+ flex-direction: column;
+ margin-bottom:40px;
+ }
+ .photos__area-title{
+   font-size: 24px;
+   font-weight:700;
+   margin-bottom:10px;}
+
+
+.entity__area{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ margin-bottom:40px;}
+ .entity__title{
+  font-size: 24px;
+  font-weight:700;
+  margin-bottom:10px;}
+ .entity__card{
+  display: grid;
+  //grid-template-columns: 2fr 4fr;}
+  .entity__card-left{
+   border-radius: 20px;
+   overflow: hidden;
+   margin-right:20px; }
+  .entity__card-img{
+   width: 100%;
+   height:135px;
+   object-fit: cover;}
+  .entity__card-text{
+  display:flex;
+  flex-direction: column;
+  line-height:normal;}
+  .entity__card-text-name{
+   font-size: 18px;
+   font-weight:500;}
+   .entity__card-text-description{
+      font-size: 14px;
+      font-weight:400;}
+.map{
+ position:relative;
+ overflow:hidden;
+ margin-bottom:-40px}
+ .map iframe{
+ width:100%;
+  height:450px;
+   frameborder:1;
+    allowfullscreen:true;
+   position:relative;
+   }
+/*# sourceMappingURL=style.css.map */
